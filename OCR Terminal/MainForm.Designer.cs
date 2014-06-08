@@ -306,6 +306,7 @@
             this.navigationTab.Size = new System.Drawing.Size(1058, 624);
             this.navigationTab.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.navigationTab.TabIndex = 0;
+            this.navigationTab.Visible = false;
             // 
             // tabDashboard
             // 
@@ -1968,6 +1969,7 @@
             this.passwordBox.ForeColor = System.Drawing.SystemColors.WindowText;
             this.passwordBox.Location = new System.Drawing.Point(85, 38);
             this.passwordBox.Name = "passwordBox";
+            this.passwordBox.PasswordChar = '*';
             this.passwordBox.Size = new System.Drawing.Size(136, 21);
             this.passwordBox.TabIndex = 6;
             // 
@@ -2097,6 +2099,7 @@
             this.toolStripPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.toolStripPanel.Size = new System.Drawing.Size(807, 21);
             this.toolStripPanel.TabIndex = 1;
+            this.toolStripPanel.Visible = false;
             // 
             // shipmentToolStrip
             // 

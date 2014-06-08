@@ -39,6 +39,26 @@ namespace OCR_Terminal
 
         private void loginBtn_Click(object sender, EventArgs e)
         {
+            if (usernameBox.Text == "") return;
+            if (passwordBox.Text == "") return;
+
+            dynamic result = WebService.Request(Url.Service, Url.Login,
+                new
+                {
+                    username = usernameBox.Text,
+                    password = login.createHash(usernameBox.Text, passwordBox.Text)
+                });
+
+            if ((int)result == 0)
+            {
+                navigationTab.Visible = true;
+                toolStripPanel.Visible = true;
+            }
+
+            //Console.Out.WriteLine("Result = " + result);
+            //Console.Out.WriteLine("Id = " + result["Id"]);
+            //Console.Out.WriteLine("username = " + result["username"]);
+            //Console.Out.WriteLine("password = " + result["password"]);
         }
 
         private void browseBtn_Click(object sender, EventArgs e)
