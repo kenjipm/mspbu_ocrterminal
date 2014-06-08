@@ -7,13 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Drawing;
 using Tesseract;
+//using OCR_Terminal.WebService;
+using System.Net;
+using System.Runtime.Serialization.Json;
+using System.IO;
+using System.Runtime.Serialization;
+using Newtonsoft.Json;
 
 namespace OCR_Terminal
 {
     public partial class mspbuTerminalForm : Form
     {
+        //ServiceClient client = new ServiceClient();
 
         public mspbuTerminalForm()
         {
@@ -138,12 +144,190 @@ namespace OCR_Terminal
 
         private void saveSppBtn_Click(object sender, EventArgs e)
         {
+            /****************** GET *****************/
+            //string url = "http://localhost:2424/Service.svc/sppGet";
+            //string data = JsonConvert.SerializeObject(new
+            //{
+            //    id = 10 //id get
+            //});
+
+            /**************** GET ALL ***************/
+            //string url = "http://localhost:2424/Service.svc/sppGetAll";
+            //string data = JsonConvert.SerializeObject(null);
+
+            /*************** GET WHERE **************/
+            //string url = "http://localhost:2424/Service.svc/sppGetWhere";
+            //string data = JsonConvert.SerializeObject(new
+            //{
+            //    sppAttributes = new
+            //    {
+            //        police_no = "B8321AA"
+            //        //another attributes here
+            //    }
+            //});
+
+            /**************** INSERT ****************/
+            string url = "http://localhost:2424/Service.svc/sppInsert";
+            string data = JsonConvert.SerializeObject(new
+            {
+                sppData = new 
+                {
+                    address		= sppAddressTextbox.Text,
+                    buyer		= sppBuyerTextbox.Text,
+                    name		= sppNameTextbox.Text,
+                    police_no	= sppPoliceTextbox.Text,
+                    product		= sppProductTextbox.Text,
+                    shipment_no	= sppShipmentTextbox.Text,
+                    volume		= sppVolumeTextbox.Text,
+                    dens_temp	= sppQualityTextbox.Text
+					//verification_date = DateTime.Now.ToString()
+                    //another attributes here
+                }
+            });
+            
+            /************* INSERT BATCH *************/
+            //string url = "http://localhost:2424/Service.svc/sppInsertBatch";
+            //string data = JsonConvert.SerializeObject(new
+            //{
+            //    sppList = new object[]
+            //    {
+            //        new
+            //        {
+            //            name        = sppNameTextbox.Text + " - new 1",
+            //            address     = sppAddressTextbox.Text,
+            //            police_no   = sppPoliceTextbox.Text,
+            //            shipment_no = sppShipmentTextbox.Text,
+            //            volume      = sppVolumeTextbox.Text
+            //            //another attributes here
+            //        },
+            //        new
+            //        {
+            //            name        = sppNameTextbox.Text+" - new 2",
+            //            address     = sppAddressTextbox.Text + " - 2",
+            //            police_no   = sppPoliceTextbox.Text,
+            //            shipment_no = sppShipmentTextbox.Text,
+            //            volume      = sppVolumeTextbox.Text
+            //            //another attributes here
+            //        },
+            //        new
+            //        {
+            //            name        = sppNameTextbox.Text + " - new 3",
+            //            address     = sppAddressTextbox.Text + " - 3",
+            //            police_no   = sppPoliceTextbox.Text,
+            //            shipment_no = sppShipmentTextbox.Text,
+            //            volume      = sppVolumeTextbox.Text
+            //            //another attributes here
+            //        }
+            //        //another objects here
+            //    }
+            //});
+
+            /**************** UPDATE ****************/
+            //string url = "http://localhost:2424/Service.svc/sppUpdate";
+            //string data = JsonConvert.SerializeObject(new
+            //{
+            //    sppData = new
+            //    {
+            //        Id = 10,
+            //        name = "Updated using sppUpdate",
+            //        volume = 8.8
+            //        //another attributes here, don't put attributes you didn't wish to change
+            //    }
+            //});
+
+            /************* UPDATE BATCH *************/
+            //string url = "http://localhost:2424/Service.svc/sppUpdateBatch";
+            //string data = JsonConvert.SerializeObject(new
+            //{
+            //    sppList = new object[]
+            //    {
+            //        new
+            //        {
+            //            Id          = 10,
+            //            name        = "Updated using sppUpdateBatch - 1",
+            //            volume      = 15.3
+            //            //another attributes here, don't put attributes you didn't wish to change
+            //        },
+            //        new
+            //        {
+            //            Id          = 11,
+            //            name        = "Updated using sppUpdateBatch - 2",
+            //            volume      = 16.3
+            //            //another attributes here, don't put attributes you didn't wish to change
+            //        },
+            //        new
+            //        {
+            //            Id          = 12,
+            //            name        = "Updated using sppUpdateBatch - 3",
+            //            volume      = 22.3
+            //            //another attributes here, don't put attributes you didn't wish to change
+            //        }
+            //        //another objects here
+            //    }
+            //});
+
+            /**************** DELETE ****************/
+            //string url = "http://localhost:2424/Service.svc/sppDelete";
+            //string data = JsonConvert.SerializeObject(new
+            //{
+            //    id = 6 //id delete
+            //});
+
+            /************* DELETE BATCH *************/
+            //string url = "http://localhost:2424/Service.svc/sppDeleteBatch";
+            //string data = JsonConvert.SerializeObject(new
+            //{
+            //    idList = new int[]
+            //    {
+            //        1, 11
+            //    }
+            //});
+
+
+
+            /************** WEB REQUEST *************/
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+            request.ContentType = "text/json";
+            request.Method = "POST";
+            Console.WriteLine(data);
+            StreamWriter writer = new StreamWriter(request.GetRequestStream());
+            writer.Write(data);
+            writer.Flush();
+            writer.Close();
+
+            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+            Stream responseStream = response.GetResponseStream();
+            StreamReader sr = new StreamReader(responseStream);
+            Console.WriteLine(sr.ReadToEnd());
 
             setSppTextBox(false);
         }
 
         private void editSppBtn_Click(object sender, EventArgs e)
         {
+            string url = "http://localhost:2424/Service.svc/sppDelete";
+            string data = JsonConvert.SerializeObject(new
+                {
+                    id = 1
+                });
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+            request.ContentType = "text/json";
+            request.Method = "POST";
+            Console.WriteLine(data);
+            //request.ContentType = "application/json; charset=utf-8";
+            //DataContractJsonSerializer ser = new datacontractjsonserializer(data.gettype());
+            //memorystream ms = new memorystream();
+            //ser.writeobject(ms, data);
+            //string json = encoding.utf8.getstring(ms.toarray());
+            StreamWriter writer = new StreamWriter(request.GetRequestStream());
+            writer.Write(data);
+            writer.Flush();
+            writer.Close();
+
+            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+            Stream responseStream = response.GetResponseStream();
+            StreamReader sr = new StreamReader(responseStream);
+            Console.WriteLine(sr.ReadToEnd());
             setSppTextBox(true);
         }
 
@@ -183,5 +367,12 @@ namespace OCR_Terminal
             newOrderForm.ShowDialog(this);
         }
 
+    }
+
+    [DataContractAttribute]
+    class Json
+    {
+        [DataMemberAttribute]
+        public string content { get; set; }
     }
 }
