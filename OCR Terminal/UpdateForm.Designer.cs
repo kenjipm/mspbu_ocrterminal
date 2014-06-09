@@ -97,6 +97,7 @@
             this.updateButtonTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.updateButtonTableLayoutPanel.Size = new System.Drawing.Size(200, 82);
             this.updateButtonTableLayoutPanel.TabIndex = 2;
+            this.updateButtonTableLayoutPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.updateButtonTableLayoutPanel_Paint);
             // 
             // cancelUpdateBtn
             // 
@@ -120,6 +121,7 @@
             this.confirmUpdateBtn.Text = "Update";
             this.confirmUpdateBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.confirmUpdateBtn.UseVisualStyleBackColor = true;
+            this.confirmUpdateBtn.Click += new System.EventHandler(this.confirmUpdateBtn_Click);
             // 
             // productUpdateComboBox
             // 

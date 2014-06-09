@@ -287,6 +287,7 @@
             this.placeOrderBtn.Text = "Place Order";
             this.placeOrderBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.placeOrderBtn.UseVisualStyleBackColor = true;
+            this.placeOrderBtn.Click += new System.EventHandler(this.placeOrderBtn_Click);
             // 
             // OrderForm
             // 
