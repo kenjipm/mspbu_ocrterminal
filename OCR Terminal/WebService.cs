@@ -15,12 +15,15 @@ namespace OCR_Terminal
         public static dynamic Request(string host, string url, string content, string method, object data)
         {
             HttpWebRequest httpWebRequest = (HttpWebRequest)WebRequest.Create(host + url);
+            Console.WriteLine(host + url);
             httpWebRequest.ContentType = content;
             httpWebRequest.Method = method;
-
+            Console.WriteLine(httpWebRequest.ContentType);
+            Console.WriteLine(httpWebRequest.Method);
             using (StreamWriter streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
             {
-                string json = new JavaScriptSerializer().Serialize(data);
+                string json = JsonConvert.SerializeObject(data);
+                Console.WriteLine(json);
                 streamWriter.Write(json);
                 streamWriter.Flush();
                 streamWriter.Close();

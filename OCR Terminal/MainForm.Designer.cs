@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mspbuTerminalForm));
             this.headerLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.navigationTab = new System.Windows.Forms.TabControl();
@@ -105,6 +105,7 @@
             this.scanGroupBox = new System.Windows.Forms.GroupBox();
             this.scanPictureBox = new System.Windows.Forms.PictureBox();
             this.tabShipment = new System.Windows.Forms.TabPage();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.shipmentLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.shipmentRecordGroupBox = new System.Windows.Forms.GroupBox();
             this.shipmentRecordDataGridView = new System.Windows.Forms.DataGridView();
@@ -194,7 +195,6 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.sppCompleteLabel = new System.Windows.Forms.ToolStripLabel();
             this.openSppFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.headerLayoutPanel.SuspendLayout();
             this.navigationTab.SuspendLayout();
             this.tabDashboard.SuspendLayout();
@@ -1196,6 +1196,14 @@
             this.tabShipment.Text = "Shipment";
             this.tabShipment.UseVisualStyleBackColor = true;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(11, 131);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 23);
+            this.comboBox1.TabIndex = 1;
+            // 
             // shipmentLayoutPanel
             // 
             this.shipmentLayoutPanel.ColumnCount = 2;
@@ -1246,18 +1254,18 @@
             // 
             // shipmentStatsChart
             // 
-            chartArea7.Name = "ChartArea1";
-            this.shipmentStatsChart.ChartAreas.Add(chartArea7);
+            chartArea11.Name = "ChartArea1";
+            this.shipmentStatsChart.ChartAreas.Add(chartArea11);
             this.shipmentStatsChart.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend7.Name = "Legend1";
-            this.shipmentStatsChart.Legends.Add(legend7);
+            legend11.Name = "Legend1";
+            this.shipmentStatsChart.Legends.Add(legend11);
             this.shipmentStatsChart.Location = new System.Drawing.Point(15, 30);
             this.shipmentStatsChart.Name = "shipmentStatsChart";
-            series7.ChartArea = "ChartArea1";
-            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series7.Legend = "Legend1";
-            series7.Name = "Series1";
-            this.shipmentStatsChart.Series.Add(series7);
+            series11.ChartArea = "ChartArea1";
+            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series11.Legend = "Legend1";
+            series11.Name = "Series1";
+            this.shipmentStatsChart.Series.Add(series11);
             this.shipmentStatsChart.Size = new System.Drawing.Size(227, 535);
             this.shipmentStatsChart.TabIndex = 0;
             this.shipmentStatsChart.Text = "chart1";
@@ -1323,18 +1331,18 @@
             // 
             // loStatsChart
             // 
-            chartArea8.Name = "ChartArea1";
-            this.loStatsChart.ChartAreas.Add(chartArea8);
+            chartArea12.Name = "ChartArea1";
+            this.loStatsChart.ChartAreas.Add(chartArea12);
             this.loStatsChart.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend8.Name = "Legend1";
-            this.loStatsChart.Legends.Add(legend8);
+            legend12.Name = "Legend1";
+            this.loStatsChart.Legends.Add(legend12);
             this.loStatsChart.Location = new System.Drawing.Point(15, 30);
             this.loStatsChart.Name = "loStatsChart";
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series8.Legend = "Legend1";
-            series8.Name = "Series1";
-            this.loStatsChart.Series.Add(series8);
+            series12.ChartArea = "ChartArea1";
+            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series12.Legend = "Legend1";
+            series12.Name = "Series1";
+            this.loStatsChart.Series.Add(series12);
             this.loStatsChart.Size = new System.Drawing.Size(227, 535);
             this.loStatsChart.TabIndex = 1;
             this.loStatsChart.Text = "chart2";
@@ -2019,7 +2027,7 @@
             this.loginBtn.Name = "loginBtn";
             this.loginBtn.Size = new System.Drawing.Size(136, 26);
             this.loginBtn.TabIndex = 4;
-            this.loginBtn.Text = "login";
+            this.loginBtn.Text = "Log in";
             this.loginBtn.UseVisualStyleBackColor = true;
             this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
             // 
@@ -2265,14 +2273,6 @@
             // openSppFileDialog
             // 
             this.openSppFileDialog.FileName = "sppFilePath";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(11, 131);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 23);
-            this.comboBox1.TabIndex = 1;
             // 
             // mspbuTerminalForm
             // 

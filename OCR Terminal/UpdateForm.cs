@@ -27,13 +27,16 @@ namespace OCR_Terminal
             dynamic result = WebService.Request(Url.Service, Url.UpdateStock, "text/json", "POST",
                      new
                      {
-                         product = productUpdateComboBox.Text,
-                         volume = volumeUpdateTextBox.Text,
-                         //verification_date = DateTime.Now.ToString()
-                         //another attributes here
+                         stockData = new
+                         {
+                             product = productUpdateComboBox.Text,
+                             volume = volumeUpdateTextBox.Text,
+                             //verification_date = DateTime.Now.ToString()
+                             //another attributes here
+                         }
                      });
 
-            if ((int)result == 0)
+            if ((int)result == 1)
             {
                 const string message = "Update stock success.";
                 const string caption = "Update stock result";

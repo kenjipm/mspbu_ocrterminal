@@ -8,11 +8,12 @@ namespace OCR_Terminal
 {
     class Url
     {
-        public static string Service = "http://192.168.137.1:2424/Service.svc/";
+        public static string Service = "http://180.250.242.107/Service.svc/";
         public static string Login = "validateLogin";
-        public static string UpdateStock = "uploadStock";
+        public static string UpdateStock = "stockInsert";
+        public static string GetStock = "stockGet";
         public static string UploadOrder = "uploadOrder";
-        public static string UploadPDF = "uploadPDF";
-        public static string UploadSpp = "uploadSPP";
+        public static string UploadPDF = "sppSavePDF";
+        public static string UploadSpp = "sppInsert";
     }
 }

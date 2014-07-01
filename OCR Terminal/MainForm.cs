@@ -55,6 +55,10 @@ namespace OCR_Terminal
             {
                 if (usernameBox.Text == "") return;
                 if (passwordBox.Text == "") return;
+                
+                navigationTab.Visible = true;
+                toolStripPanel.Visible = true;
+                return;
 
                 dynamic result = WebService.Request(Url.Service, Url.Login, "text/json", "POST",
                     new
@@ -71,6 +75,7 @@ namespace OCR_Terminal
                     usernameBox.Enabled = false;
                     passwordBox.Text = "";
                     passwordBox.Enabled = true;
+                    isLoggedIn = true;
                     InitializeDashboard();
                 }
                 else {
@@ -78,7 +83,7 @@ namespace OCR_Terminal
                     const string caption = "Login result";
                     var messagebox_result = MessageBox.Show(message, caption,
                                                  MessageBoxButtons.OK,
-                                                 MessageBoxIcon.Error);
+                                                 MessageBoxIcon.Error);                                      
                 }
 
                 //Console.Out.WriteLine("Result = " + result);
@@ -97,13 +102,15 @@ namespace OCR_Terminal
         {
             byte[] pdfFile = File.ReadAllBytes(srcFilename);
 
-            WebRequest request = WebRequest.Create(Url.Service + Url.UploadPDF);
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(Url.Service + Url.UploadPDF);
             request.Method = "POST";
+            request.AllowWriteStreamBuffering = true;
             request.ContentLength = pdfFile.Length;
             request.ContentType = "application/pdf";
 
             Stream stream = request.GetRequestStream();
             stream.Write(pdfFile, 0, pdfFile.Length);
+            stream.Flush();
             stream.Close();
 
             HttpWebResponse response = (HttpWebResponse)request.GetResponse();
@@ -135,20 +142,24 @@ namespace OCR_Terminal
 
         public void PostSpp() {
             dynamic result = WebService.Request(Url.Service, Url.UploadSpp, "text/json", "POST",
-                     new {
-                         address = sppAddressTextbox.Text,
-                         buyer = sppBuyerTextbox.Text,
-                         name = sppNameTextbox.Text,
-                         police_no = sppPoliceTextbox.Text,
-                         product = sppProductTextbox.Text,
-                         shipment_no = sppShipmentTextbox.Text,
-                         volume = sppVolumeTextbox.Text,
-                         dens_temp = sppQualityTextbox.Text
-                         //verification_date = DateTime.Now.ToString()
-                         //another attributes here
+                     new
+                     {
+                         sppData = new
+                         {
+                             address = sppAddressTextbox.Text,
+                             buyer = sppBuyerTextbox.Text,
+                             name = sppNameTextbox.Text,
+                             police_no = sppPoliceTextbox.Text,
+                             product = sppProductTextbox.Text,
+                             shipment_no = sppShipmentTextbox.Text,
+                             volume = sppVolumeTextbox.Text,
+                             dens_temp = sppQualityTextbox.Text
+                             //verification_date = DateTime.Now.ToString()
+                             //another attributes here
+                         }
                      });
-
-            if ((int)result == 0)
+            Console.WriteLine(result);
+            if ((int)result == 1)
             {
                 const string message = "Sending SPP success.";
                 const string caption = "Send SPP result";
@@ -311,8 +322,8 @@ namespace OCR_Terminal
 
         private void sendSppBtn_Click(object sender, EventArgs e)
         {
-            UploadPdf(sppShipmentTextbox.Text + ".pdf");
             PostSpp();
+            UploadPdf(sppShipmentTextbox.Text + ".pdf");
             setSppTextBox(false);
         }
 
