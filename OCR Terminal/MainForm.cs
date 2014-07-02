@@ -53,12 +53,14 @@ namespace OCR_Terminal
             }
             else
             {
+                /** PAKSA APLIKASI UNTUK SELALU BISA LOGIN WALAU APAPUN INPUT DI username DAN password BOX
+                 * navigationTab.Visible = true;
+                 * toolStripPanel.Visible = true;
+                 * return;
+                 **/
+
                 if (usernameBox.Text == "") return;
-                if (passwordBox.Text == "") return;
-                
-                navigationTab.Visible = true;
-                toolStripPanel.Visible = true;
-                return;
+                if (passwordBox.Text == "") return;              
 
                 dynamic result = WebService.Request(Url.Service, Url.Login, "text/json", "POST",
                     new
