@@ -1,29 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Net;
 using Tesseract;
-using Newtonsoft.Json;
 
 namespace OCR_Terminal
 {
     public partial class mspbuTerminalForm : Form
     {
-
         public mspbuTerminalForm()
         {
             InitializeComponent();
         }
 
         struct SppForm
-		{
+        {
             public string Name;
             public string Address;
             public string Police;
@@ -32,22 +23,23 @@ namespace OCR_Terminal
             public string Quality;
             public string Buyer;
             public string Product;
-		};
+        };
 
         private Boolean isLoggedIn = false;
-
-        private void tabDashboard_Click(object sender, EventArgs e)
-        {
-
-        }
+        private login lgn = null;
 
         private void loginBtn_Click(object sender, EventArgs e)
-        {        
+        {
             if (isLoggedIn)
             {
+                lgn = null;
+
+                isLoggedIn = false;
                 loginBtn.Text = "Log in";
+
                 usernameBox.Enabled = true;
                 passwordBox.Enabled = true;
+
                 navigationTab.Visible = false;
                 toolStripPanel.Visible = false;
             }
@@ -59,33 +51,60 @@ namespace OCR_Terminal
                  * return;
                  **/
 
-                if (usernameBox.Text == "") return;
-                if (passwordBox.Text == "") return;              
+                if ((usernameBox.Text == "") || (passwordBox.Text == ""))
+                {
+                    MessageBox.Show("Username or password is empty",
+                        "Error",
+                        MessageBoxButtons.OK);
+                    return;
+                }
 
-                dynamic result = WebService.Request(Url.Service, Url.Login, "text/json", "POST",
+                lgn = new login();
+
+                lgn.username = usernameBox.Text;
+                usernameBox.Text = "";
+
+                lgn.password = passwordBox.Text;
+                passwordBox.Text = "";
+
+                dynamic result = WebService.Request(Url.Service, Url.Login,
                     new
                     {
-                        username = usernameBox.Text,
-                        password = login.createHash(usernameBox.Text, passwordBox.Text)
+                        username = lgn.username,
+                        password = login.createHash(lgn.username, lgn.password)
                     });
 
                 if ((int)result == 0)
                 {
+                    result = null;
+                    result = WebService.Request(Url.Service, Url.Information,
+                        new
+                        {
+                            username = lgn.username
+                        });
+
+                    lgn.nama_id = result["nama_id"];
+                    lgn.alamat = result["alamat"];
+                    lgn.pemilik = result["pemilik"];
+                    lgn.role = result["role"];
+
+                    isLoggedIn = true;
+                    loginBtn.Text = "Log out";
+
                     navigationTab.Visible = true;
                     toolStripPanel.Visible = true;
-                    loginBtn.Text = "Log out";
+
                     usernameBox.Enabled = false;
-                    passwordBox.Text = "";
-                    passwordBox.Enabled = true;
-                    isLoggedIn = true;
+                    passwordBox.Enabled = false;
+
                     InitializeDashboard();
                 }
-                else {
-                    const string message = "Login failed. Check username and password";
-                    const string caption = "Login result";
-                    var messagebox_result = MessageBox.Show(message, caption,
-                                                 MessageBoxButtons.OK,
-                                                 MessageBoxIcon.Error);                                      
+                else
+                {
+                    MessageBox.Show("Login failed. Check username and password",
+                                    "Error",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Error);
                 }
 
                 //Console.Out.WriteLine("Result = " + result);
@@ -95,30 +114,17 @@ namespace OCR_Terminal
             }
         }
 
-        public static void InitializeDashboard() { 
+        private void InitializeDashboard()
+        {
             // GET data to fill the dashboard
-
+            dbIdInfoLabel.Text = lgn.nama_id;
+            dbOwnerInfoLabel.Text = lgn.pemilik;
+            dbAddressInfoLabel.Text = lgn.alamat;
         }
 
         public static void UploadPdf(string srcFilename)
         {
-            byte[] pdfFile = File.ReadAllBytes(srcFilename);
-
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(Url.Service + Url.UploadPDF);
-            request.Method = "POST";
-            request.AllowWriteStreamBuffering = true;
-            request.ContentLength = pdfFile.Length;
-            request.ContentType = "application/pdf";
-
-            Stream stream = request.GetRequestStream();
-            stream.Write(pdfFile, 0, pdfFile.Length);
-            stream.Flush();
-            stream.Close();
-
-            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-            StreamReader reader = new StreamReader(response.GetResponseStream());
-            Console.WriteLine(reader.ReadToEnd());
-            reader.Close();
+            WebService.UploadPDF(srcFilename);
         }
 
         public static void ConvertImageToPdf(string srcFilename, string dstFilename)
@@ -142,24 +148,25 @@ namespace OCR_Terminal
             }
         }
 
-        public void PostSpp() {
-            dynamic result = WebService.Request(Url.Service, Url.UploadSpp, "text/json", "POST",
-                     new
-                     {
-                         sppData = new
-                         {
-                             address = sppAddressTextbox.Text,
-                             buyer = sppBuyerTextbox.Text,
-                             name = sppNameTextbox.Text,
-                             police_no = sppPoliceTextbox.Text,
-                             product = sppProductTextbox.Text,
-                             shipment_no = sppShipmentTextbox.Text,
-                             volume = sppVolumeTextbox.Text,
-                             dens_temp = sppQualityTextbox.Text
-                             //verification_date = DateTime.Now.ToString()
-                             //another attributes here
-                         }
-                     });
+        public void PostSpp()
+        {
+            dynamic result = WebService.Request(Url.Service, Url.UploadSpp,
+                new
+                {
+                    sppData = new
+                    {
+                        address = sppAddressTextbox.Text,
+                        buyer = sppBuyerTextbox.Text,
+                        name = sppNameTextbox.Text,
+                        police_no = sppPoliceTextbox.Text,
+                        product = sppProductTextbox.Text,
+                        shipment_no = sppShipmentTextbox.Text,
+                        volume = sppVolumeTextbox.Text,
+                        dens_temp = sppQualityTextbox.Text
+                        //verification_date = DateTime.Now.ToString()
+                        //another attributes here
+                    }
+                });
             Console.WriteLine(result);
             if ((int)result == 1)
             {
@@ -170,7 +177,8 @@ namespace OCR_Terminal
                                              MessageBoxIcon.Information);
             }
 
-            else {
+            else
+            {
                 const string message = "Sending SPP failed. Check internet connection or user identity!";
                 const string caption = "Send SPP result";
                 var messagebox_result = MessageBox.Show(message, caption,
@@ -183,13 +191,13 @@ namespace OCR_Terminal
         {
             openSppFileDialog.ShowDialog(this);
             pathTextBox.Text = openSppFileDialog.FileName;
-            scanPictureBox.ImageLocation = openSppFileDialog.FileName;            
+            scanPictureBox.ImageLocation = openSppFileDialog.FileName;
             SppForm spp = new SppForm();
             using (var engine = new TesseractEngine("./tessdata", "ind", EngineMode.Default))
             {
                 Image original_img = new Bitmap(openSppFileDialog.FileName);
 
-                Point crop_point = new Point(300,0);
+                Point crop_point = new Point(300, 0);
                 Size crop_size = new Size(original_img.Width - 300, original_img.Height);
                 Rectangle crop_area = new Rectangle(crop_point, crop_size);
                 Image cropped_img = cropImage(original_img, crop_area);
@@ -200,15 +208,18 @@ namespace OCR_Terminal
                     {
                         string spp_str = page.GetText();
                         int parse_state = 0; // 0,2,4,6,8,10,12,14,16=none, 1=nama, 3=alamat, 5=nmrpolisi, 7=nmrshipment, 9=tujuan, 
-                                             // 11=pemesanan, 13=denstemp, 15=pembeli, 17=produk
+                        // 11=pemesanan, 13=denstemp, 15=pembeli, 17=produk
                         var i = 0;
-                        
+
                         Console.WriteLine(spp_str);
-                        for(i=0; i<spp_str.Length; i++) {
-                            if (spp_str[i] == ':') {
+                        for (i = 0; i < spp_str.Length; i++)
+                        {
+                            if (spp_str[i] == ':')
+                            {
                                 parse_state++;
                             }
-                            else {
+                            else
+                            {
                                 if (parse_state == 1)
                                 { // name
                                     spp.Name = spp.Name + spp_str[i];
@@ -241,7 +252,7 @@ namespace OCR_Terminal
                                 {// produk
                                     spp.Product = spp.Product + spp_str[i];
                                 }
-                            }					
+                            }
                         }
                         setSppTextBox(false);
                         sppNameTextbox.Text = spp.Name.Replace("\n", "");
@@ -251,13 +262,13 @@ namespace OCR_Terminal
                         sppVolumeTextbox.Text = spp.Volume.Replace("\n", "");
                         sppQualityTextbox.Text = spp.Quality.Replace("\n", "");
                         sppBuyerTextbox.Text = spp.Buyer.Replace("\n", "");
-                        sppProductTextbox.Text = spp.Product.Replace("\n", "");                        
+                        sppProductTextbox.Text = spp.Product.Replace("\n", "");
                     }
                 }
             }
-            ConvertImageToPdf(openSppFileDialog.FileName, sppShipmentTextbox.Text + ".pdf");                        
+            ConvertImageToPdf(openSppFileDialog.FileName, sppShipmentTextbox.Text + ".pdf");
         }
-        
+
         private static Image cropImage(Image img, Rectangle cropArea)
         {
             Bitmap bmpImage = new Bitmap(img);
@@ -265,7 +276,8 @@ namespace OCR_Terminal
             return (Image)(bmpCrop);
         }
 
-        private void setSppTextBox(bool isEnabled) {
+        private void setSppTextBox(bool isEnabled)
+        {
             sppNameTextbox.Enabled = isEnabled;
             sppAddressTextbox.Enabled = isEnabled;
             sppPoliceTextbox.Enabled = isEnabled;

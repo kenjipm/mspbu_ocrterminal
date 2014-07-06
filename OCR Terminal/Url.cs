@@ -8,8 +8,12 @@ namespace OCR_Terminal
 {
     class Url
     {
-        public static string Service = "http://180.250.242.107/Service.svc/";
+        private static string propFilePath = "app.properties";
+        private static Property prop = new Property(propFilePath);
+        public static string Service = prop.GetValue("host", "http://localhost:2424/Service.svc/");
+
         public static string Login = "validateLogin";
+        public static string Information = "getInformation";
         public static string UpdateStock = "stockInsert";
         public static string GetStock = "stockGet";
         public static string UploadOrder = "uploadOrder";

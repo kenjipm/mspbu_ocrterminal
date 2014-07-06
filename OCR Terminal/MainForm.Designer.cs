@@ -297,7 +297,7 @@
             this.navigationTab.Controls.Add(this.tabSettings);
             this.navigationTab.Cursor = System.Windows.Forms.Cursors.Hand;
             this.navigationTab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.navigationTab.Font = new System.Drawing.Font("Lato", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.navigationTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.navigationTab.ImageList = this.imageIcons;
             this.navigationTab.ItemSize = new System.Drawing.Size(150, 30);
             this.navigationTab.Location = new System.Drawing.Point(3, 123);
@@ -320,7 +320,6 @@
             this.tabDashboard.TabIndex = 0;
             this.tabDashboard.Text = "Dashboard";
             this.tabDashboard.UseVisualStyleBackColor = true;
-            this.tabDashboard.Click += new System.EventHandler(this.tabDashboard_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -379,7 +378,7 @@
             this.dbDispencerTitleLabel.AutoSize = true;
             this.dbDispencerTitleLabel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.dbDispencerTitleLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dbDispencerTitleLabel.Font = new System.Drawing.Font("Lato Black", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dbDispencerTitleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dbDispencerTitleLabel.Location = new System.Drawing.Point(3, 0);
             this.dbDispencerTitleLabel.Name = "dbDispencerTitleLabel";
             this.dbDispencerTitleLabel.Size = new System.Drawing.Size(288, 59);
@@ -392,7 +391,7 @@
             this.dbDispencerPremiumLabel.AutoSize = true;
             this.dbDispencerPremiumLabel.BackColor = System.Drawing.Color.IndianRed;
             this.dbDispencerPremiumLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dbDispencerPremiumLabel.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dbDispencerPremiumLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dbDispencerPremiumLabel.Location = new System.Drawing.Point(3, 59);
             this.dbDispencerPremiumLabel.Name = "dbDispencerPremiumLabel";
             this.dbDispencerPremiumLabel.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
@@ -406,7 +405,7 @@
             this.dbDispencerPertamaxLabel.AutoSize = true;
             this.dbDispencerPertamaxLabel.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.dbDispencerPertamaxLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dbDispencerPertamaxLabel.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dbDispencerPertamaxLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dbDispencerPertamaxLabel.Location = new System.Drawing.Point(3, 118);
             this.dbDispencerPertamaxLabel.Name = "dbDispencerPertamaxLabel";
             this.dbDispencerPertamaxLabel.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
@@ -420,7 +419,7 @@
             this.dbDispencerSolarLabel.AutoSize = true;
             this.dbDispencerSolarLabel.BackColor = System.Drawing.Color.YellowGreen;
             this.dbDispencerSolarLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dbDispencerSolarLabel.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dbDispencerSolarLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dbDispencerSolarLabel.Location = new System.Drawing.Point(3, 177);
             this.dbDispencerSolarLabel.Name = "dbDispencerSolarLabel";
             this.dbDispencerSolarLabel.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
@@ -466,7 +465,7 @@
             this.dbStockTitleLabel.AutoSize = true;
             this.dbStockTitleLabel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.dbStockTitleLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dbStockTitleLabel.Font = new System.Drawing.Font("Lato Black", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dbStockTitleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dbStockTitleLabel.Location = new System.Drawing.Point(3, 0);
             this.dbStockTitleLabel.Name = "dbStockTitleLabel";
             this.dbStockTitleLabel.Size = new System.Drawing.Size(288, 59);
@@ -479,7 +478,7 @@
             this.dbStockPremiumLabel.AutoSize = true;
             this.dbStockPremiumLabel.BackColor = System.Drawing.Color.IndianRed;
             this.dbStockPremiumLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dbStockPremiumLabel.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dbStockPremiumLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dbStockPremiumLabel.Location = new System.Drawing.Point(3, 59);
             this.dbStockPremiumLabel.Name = "dbStockPremiumLabel";
             this.dbStockPremiumLabel.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
@@ -493,7 +492,7 @@
             this.dbStockPertamaxLabel.AutoSize = true;
             this.dbStockPertamaxLabel.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.dbStockPertamaxLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dbStockPertamaxLabel.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dbStockPertamaxLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dbStockPertamaxLabel.Location = new System.Drawing.Point(3, 118);
             this.dbStockPertamaxLabel.Name = "dbStockPertamaxLabel";
             this.dbStockPertamaxLabel.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
@@ -507,7 +506,7 @@
             this.dbStockSolarLabel.AutoSize = true;
             this.dbStockSolarLabel.BackColor = System.Drawing.Color.YellowGreen;
             this.dbStockSolarLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dbStockSolarLabel.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dbStockSolarLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dbStockSolarLabel.Location = new System.Drawing.Point(3, 177);
             this.dbStockSolarLabel.Name = "dbStockSolarLabel";
             this.dbStockSolarLabel.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
@@ -555,7 +554,7 @@
             this.dbLoTitleLabel.AutoSize = true;
             this.dbLoTitleLabel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.dbLoTitleLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dbLoTitleLabel.Font = new System.Drawing.Font("Lato Black", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dbLoTitleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dbLoTitleLabel.Location = new System.Drawing.Point(3, 0);
             this.dbLoTitleLabel.Name = "dbLoTitleLabel";
             this.dbLoTitleLabel.Size = new System.Drawing.Size(288, 47);
@@ -567,7 +566,7 @@
             // 
             this.dbTotalLoLabel.AutoSize = true;
             this.dbTotalLoLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dbTotalLoLabel.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dbTotalLoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dbTotalLoLabel.Location = new System.Drawing.Point(3, 47);
             this.dbTotalLoLabel.Name = "dbTotalLoLabel";
             this.dbTotalLoLabel.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
@@ -581,7 +580,7 @@
             this.dbPremiumLoLabel.AutoSize = true;
             this.dbPremiumLoLabel.BackColor = System.Drawing.Color.IndianRed;
             this.dbPremiumLoLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dbPremiumLoLabel.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dbPremiumLoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dbPremiumLoLabel.Location = new System.Drawing.Point(3, 94);
             this.dbPremiumLoLabel.Name = "dbPremiumLoLabel";
             this.dbPremiumLoLabel.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
@@ -595,7 +594,7 @@
             this.dbPertamaxLoLabel.AutoSize = true;
             this.dbPertamaxLoLabel.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.dbPertamaxLoLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dbPertamaxLoLabel.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dbPertamaxLoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dbPertamaxLoLabel.Location = new System.Drawing.Point(3, 141);
             this.dbPertamaxLoLabel.Name = "dbPertamaxLoLabel";
             this.dbPertamaxLoLabel.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
@@ -609,7 +608,7 @@
             this.dbSolarLoLabel.AutoSize = true;
             this.dbSolarLoLabel.BackColor = System.Drawing.Color.YellowGreen;
             this.dbSolarLoLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dbSolarLoLabel.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dbSolarLoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dbSolarLoLabel.Location = new System.Drawing.Point(3, 188);
             this.dbSolarLoLabel.Name = "dbSolarLoLabel";
             this.dbSolarLoLabel.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
@@ -655,7 +654,7 @@
             this.dbInfoTitleLabel.AutoSize = true;
             this.dbInfoTitleLabel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.dbInfoTitleLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dbInfoTitleLabel.Font = new System.Drawing.Font("Lato Black", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dbInfoTitleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dbInfoTitleLabel.Location = new System.Drawing.Point(3, 0);
             this.dbInfoTitleLabel.Name = "dbInfoTitleLabel";
             this.dbInfoTitleLabel.Size = new System.Drawing.Size(288, 59);
@@ -667,7 +666,7 @@
             // 
             this.dbIdInfoLabel.AutoSize = true;
             this.dbIdInfoLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dbIdInfoLabel.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dbIdInfoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dbIdInfoLabel.Location = new System.Drawing.Point(3, 59);
             this.dbIdInfoLabel.Name = "dbIdInfoLabel";
             this.dbIdInfoLabel.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
@@ -680,7 +679,7 @@
             // 
             this.dbOwnerInfoLabel.AutoSize = true;
             this.dbOwnerInfoLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dbOwnerInfoLabel.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dbOwnerInfoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dbOwnerInfoLabel.Location = new System.Drawing.Point(3, 118);
             this.dbOwnerInfoLabel.Name = "dbOwnerInfoLabel";
             this.dbOwnerInfoLabel.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
@@ -693,7 +692,7 @@
             // 
             this.dbAddressInfoLabel.AutoSize = true;
             this.dbAddressInfoLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dbAddressInfoLabel.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dbAddressInfoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dbAddressInfoLabel.Location = new System.Drawing.Point(3, 177);
             this.dbAddressInfoLabel.Name = "dbAddressInfoLabel";
             this.dbAddressInfoLabel.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
@@ -739,7 +738,7 @@
             this.dbShipmentTitleLabel.AutoSize = true;
             this.dbShipmentTitleLabel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.dbShipmentTitleLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dbShipmentTitleLabel.Font = new System.Drawing.Font("Lato Black", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dbShipmentTitleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dbShipmentTitleLabel.Location = new System.Drawing.Point(3, 0);
             this.dbShipmentTitleLabel.Name = "dbShipmentTitleLabel";
             this.dbShipmentTitleLabel.Size = new System.Drawing.Size(288, 59);
@@ -751,7 +750,7 @@
             // 
             this.dbTotalShipmentLabel.AutoSize = true;
             this.dbTotalShipmentLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dbTotalShipmentLabel.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dbTotalShipmentLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dbTotalShipmentLabel.Location = new System.Drawing.Point(3, 59);
             this.dbTotalShipmentLabel.Name = "dbTotalShipmentLabel";
             this.dbTotalShipmentLabel.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
@@ -764,7 +763,7 @@
             // 
             this.dbCompletedShipmentLabel.AutoSize = true;
             this.dbCompletedShipmentLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dbCompletedShipmentLabel.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dbCompletedShipmentLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dbCompletedShipmentLabel.Location = new System.Drawing.Point(3, 118);
             this.dbCompletedShipmentLabel.Name = "dbCompletedShipmentLabel";
             this.dbCompletedShipmentLabel.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
@@ -777,7 +776,7 @@
             // 
             this.dbInProgressShipmentLabel.AutoSize = true;
             this.dbInProgressShipmentLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dbInProgressShipmentLabel.Font = new System.Drawing.Font("Lato", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dbInProgressShipmentLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dbInProgressShipmentLabel.Location = new System.Drawing.Point(3, 177);
             this.dbInProgressShipmentLabel.Name = "dbInProgressShipmentLabel";
             this.dbInProgressShipmentLabel.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
@@ -835,13 +834,13 @@
             this.manageSppLayoutPanel.Controls.Add(this.browseSppLayoutPanel, 0, 0);
             this.manageSppLayoutPanel.Controls.Add(this.recordGroupBox, 0, 2);
             this.manageSppLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.manageSppLayoutPanel.Location = new System.Drawing.Point(3, 18);
+            this.manageSppLayoutPanel.Location = new System.Drawing.Point(3, 17);
             this.manageSppLayoutPanel.Name = "manageSppLayoutPanel";
             this.manageSppLayoutPanel.RowCount = 3;
             this.manageSppLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
             this.manageSppLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.manageSppLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 77F));
-            this.manageSppLayoutPanel.Size = new System.Drawing.Size(281, 533);
+            this.manageSppLayoutPanel.Size = new System.Drawing.Size(281, 534);
             this.manageSppLayoutPanel.TabIndex = 0;
             // 
             // manageSppBtnLayoutPanel
@@ -858,7 +857,7 @@
             this.manageSppBtnLayoutPanel.Name = "manageSppBtnLayoutPanel";
             this.manageSppBtnLayoutPanel.RowCount = 1;
             this.manageSppBtnLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.manageSppBtnLayoutPanel.Size = new System.Drawing.Size(275, 73);
+            this.manageSppBtnLayoutPanel.Size = new System.Drawing.Size(275, 74);
             this.manageSppBtnLayoutPanel.TabIndex = 0;
             // 
             // sendSppBtn
@@ -868,7 +867,7 @@
             this.sendSppBtn.Location = new System.Drawing.Point(185, 3);
             this.sendSppBtn.Name = "sendSppBtn";
             this.sendSppBtn.Padding = new System.Windows.Forms.Padding(3);
-            this.sendSppBtn.Size = new System.Drawing.Size(87, 67);
+            this.sendSppBtn.Size = new System.Drawing.Size(87, 68);
             this.sendSppBtn.TabIndex = 4;
             this.sendSppBtn.Text = "Send SPP";
             this.sendSppBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -882,7 +881,7 @@
             this.editSppBtn.Location = new System.Drawing.Point(3, 3);
             this.editSppBtn.Name = "editSppBtn";
             this.editSppBtn.Padding = new System.Windows.Forms.Padding(3);
-            this.editSppBtn.Size = new System.Drawing.Size(85, 67);
+            this.editSppBtn.Size = new System.Drawing.Size(85, 68);
             this.editSppBtn.TabIndex = 2;
             this.editSppBtn.Text = "Edit SPP Data";
             this.editSppBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -896,7 +895,7 @@
             this.saveSppBtn.Location = new System.Drawing.Point(94, 3);
             this.saveSppBtn.Name = "saveSppBtn";
             this.saveSppBtn.Padding = new System.Windows.Forms.Padding(3);
-            this.saveSppBtn.Size = new System.Drawing.Size(85, 67);
+            this.saveSppBtn.Size = new System.Drawing.Size(85, 68);
             this.saveSppBtn.TabIndex = 3;
             this.saveSppBtn.Text = "Save SPP Data";
             this.saveSppBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -937,14 +936,14 @@
             this.pathTextBox.Location = new System.Drawing.Point(30, 6);
             this.pathTextBox.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
             this.pathTextBox.Name = "pathTextBox";
-            this.pathTextBox.Size = new System.Drawing.Size(242, 22);
+            this.pathTextBox.Size = new System.Drawing.Size(242, 21);
             this.pathTextBox.TabIndex = 1;
             // 
             // recordGroupBox
             // 
             this.recordGroupBox.Controls.Add(this.sppRecordDataGridView);
             this.recordGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.recordGroupBox.Location = new System.Drawing.Point(3, 124);
+            this.recordGroupBox.Location = new System.Drawing.Point(3, 125);
             this.recordGroupBox.Name = "recordGroupBox";
             this.recordGroupBox.Padding = new System.Windows.Forms.Padding(10);
             this.recordGroupBox.Size = new System.Drawing.Size(275, 406);
@@ -956,9 +955,9 @@
             // 
             this.sppRecordDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.sppRecordDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sppRecordDataGridView.Location = new System.Drawing.Point(10, 25);
+            this.sppRecordDataGridView.Location = new System.Drawing.Point(10, 24);
             this.sppRecordDataGridView.Name = "sppRecordDataGridView";
-            this.sppRecordDataGridView.Size = new System.Drawing.Size(255, 371);
+            this.sppRecordDataGridView.Size = new System.Drawing.Size(255, 372);
             this.sppRecordDataGridView.TabIndex = 0;
             // 
             // dataGroupBox
@@ -996,7 +995,7 @@
             this.editSppLayoutPanel.Controls.Add(this.sppBuyerTextbox, 1, 6);
             this.editSppLayoutPanel.Controls.Add(this.sppProductTextbox, 1, 7);
             this.editSppLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.editSppLayoutPanel.Location = new System.Drawing.Point(10, 25);
+            this.editSppLayoutPanel.Location = new System.Drawing.Point(10, 24);
             this.editSppLayoutPanel.Name = "editSppLayoutPanel";
             this.editSppLayoutPanel.RowCount = 9;
             this.editSppLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
@@ -1008,7 +1007,7 @@
             this.editSppLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
             this.editSppLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
             this.editSppLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.editSppLayoutPanel.Size = new System.Drawing.Size(320, 519);
+            this.editSppLayoutPanel.Size = new System.Drawing.Size(320, 520);
             this.editSppLayoutPanel.TabIndex = 0;
             // 
             // sppNameLabel
@@ -1046,7 +1045,7 @@
             this.sppShipmentLabel.AutoSize = true;
             this.sppShipmentLabel.Location = new System.Drawing.Point(3, 171);
             this.sppShipmentLabel.Name = "sppShipmentLabel";
-            this.sppShipmentLabel.Size = new System.Drawing.Size(40, 45);
+            this.sppShipmentLabel.Size = new System.Drawing.Size(38, 45);
             this.sppShipmentLabel.TabIndex = 3;
             this.sppShipmentLabel.Text = "Shipment No.";
             // 
@@ -1113,7 +1112,7 @@
             this.sppPoliceTextbox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sppPoliceTextbox.Location = new System.Drawing.Point(51, 117);
             this.sppPoliceTextbox.Name = "sppPoliceTextbox";
-            this.sppPoliceTextbox.Size = new System.Drawing.Size(266, 22);
+            this.sppPoliceTextbox.Size = new System.Drawing.Size(266, 21);
             this.sppPoliceTextbox.TabIndex = 10;
             // 
             // sppShipmentTextbox
@@ -1121,7 +1120,7 @@
             this.sppShipmentTextbox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sppShipmentTextbox.Location = new System.Drawing.Point(51, 174);
             this.sppShipmentTextbox.Name = "sppShipmentTextbox";
-            this.sppShipmentTextbox.Size = new System.Drawing.Size(266, 22);
+            this.sppShipmentTextbox.Size = new System.Drawing.Size(266, 21);
             this.sppShipmentTextbox.TabIndex = 11;
             // 
             // sppVolumeTextbox
@@ -1129,7 +1128,7 @@
             this.sppVolumeTextbox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sppVolumeTextbox.Location = new System.Drawing.Point(51, 231);
             this.sppVolumeTextbox.Name = "sppVolumeTextbox";
-            this.sppVolumeTextbox.Size = new System.Drawing.Size(266, 22);
+            this.sppVolumeTextbox.Size = new System.Drawing.Size(266, 21);
             this.sppVolumeTextbox.TabIndex = 12;
             // 
             // sppQualityTextbox
@@ -1137,7 +1136,7 @@
             this.sppQualityTextbox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sppQualityTextbox.Location = new System.Drawing.Point(51, 288);
             this.sppQualityTextbox.Name = "sppQualityTextbox";
-            this.sppQualityTextbox.Size = new System.Drawing.Size(266, 22);
+            this.sppQualityTextbox.Size = new System.Drawing.Size(266, 21);
             this.sppQualityTextbox.TabIndex = 13;
             // 
             // sppBuyerTextbox
@@ -1154,7 +1153,7 @@
             this.sppProductTextbox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sppProductTextbox.Location = new System.Drawing.Point(51, 402);
             this.sppProductTextbox.Name = "sppProductTextbox";
-            this.sppProductTextbox.Size = new System.Drawing.Size(266, 22);
+            this.sppProductTextbox.Size = new System.Drawing.Size(266, 21);
             this.sppProductTextbox.TabIndex = 15;
             // 
             // scanGroupBox
@@ -1176,10 +1175,10 @@
             this.scanPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.scanPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.scanPictureBox.InitialImage = global::OCR_Terminal.Properties.Resources.no_spp;
-            this.scanPictureBox.Location = new System.Drawing.Point(10, 25);
+            this.scanPictureBox.Location = new System.Drawing.Point(10, 24);
             this.scanPictureBox.Margin = new System.Windows.Forms.Padding(10, 15, 10, 15);
             this.scanPictureBox.Name = "scanPictureBox";
-            this.scanPictureBox.Size = new System.Drawing.Size(319, 519);
+            this.scanPictureBox.Size = new System.Drawing.Size(319, 520);
             this.scanPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.scanPictureBox.TabIndex = 0;
             this.scanPictureBox.TabStop = false;
@@ -1235,9 +1234,9 @@
             // 
             this.shipmentRecordDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.shipmentRecordDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.shipmentRecordDataGridView.Location = new System.Drawing.Point(15, 30);
+            this.shipmentRecordDataGridView.Location = new System.Drawing.Point(15, 29);
             this.shipmentRecordDataGridView.Name = "shipmentRecordDataGridView";
-            this.shipmentRecordDataGridView.Size = new System.Drawing.Size(751, 535);
+            this.shipmentRecordDataGridView.Size = new System.Drawing.Size(751, 536);
             this.shipmentRecordDataGridView.TabIndex = 0;
             // 
             // shipmentStatsGroupBox
@@ -1259,14 +1258,14 @@
             this.shipmentStatsChart.Dock = System.Windows.Forms.DockStyle.Fill;
             legend1.Name = "Legend1";
             this.shipmentStatsChart.Legends.Add(legend1);
-            this.shipmentStatsChart.Location = new System.Drawing.Point(15, 30);
+            this.shipmentStatsChart.Location = new System.Drawing.Point(15, 29);
             this.shipmentStatsChart.Name = "shipmentStatsChart";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.shipmentStatsChart.Series.Add(series1);
-            this.shipmentStatsChart.Size = new System.Drawing.Size(227, 535);
+            this.shipmentStatsChart.Size = new System.Drawing.Size(227, 536);
             this.shipmentStatsChart.TabIndex = 0;
             this.shipmentStatsChart.Text = "chart1";
             // 
@@ -1312,9 +1311,9 @@
             // 
             this.loRecordDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.loRecordDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.loRecordDataGridView.Location = new System.Drawing.Point(15, 30);
+            this.loRecordDataGridView.Location = new System.Drawing.Point(15, 29);
             this.loRecordDataGridView.Name = "loRecordDataGridView";
-            this.loRecordDataGridView.Size = new System.Drawing.Size(751, 535);
+            this.loRecordDataGridView.Size = new System.Drawing.Size(751, 536);
             this.loRecordDataGridView.TabIndex = 0;
             // 
             // loStatsGroupBox
@@ -1336,14 +1335,14 @@
             this.loStatsChart.Dock = System.Windows.Forms.DockStyle.Fill;
             legend2.Name = "Legend1";
             this.loStatsChart.Legends.Add(legend2);
-            this.loStatsChart.Location = new System.Drawing.Point(15, 30);
+            this.loStatsChart.Location = new System.Drawing.Point(15, 29);
             this.loStatsChart.Name = "loStatsChart";
             series2.ChartArea = "ChartArea1";
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
             series2.Legend = "Legend1";
             series2.Name = "Series1";
             this.loStatsChart.Series.Add(series2);
-            this.loStatsChart.Size = new System.Drawing.Size(227, 535);
+            this.loStatsChart.Size = new System.Drawing.Size(227, 536);
             this.loStatsChart.TabIndex = 1;
             this.loStatsChart.Text = "chart2";
             // 
@@ -1395,13 +1394,13 @@
             this.stockPremiumLayoutPanel.Controls.Add(this.stockPremiumBtnLayoutPanel, 0, 2);
             this.stockPremiumLayoutPanel.Controls.Add(this.stockPremiumInformationGroupBox, 0, 1);
             this.stockPremiumLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.stockPremiumLayoutPanel.Location = new System.Drawing.Point(15, 30);
+            this.stockPremiumLayoutPanel.Location = new System.Drawing.Point(15, 29);
             this.stockPremiumLayoutPanel.Name = "stockPremiumLayoutPanel";
             this.stockPremiumLayoutPanel.RowCount = 3;
             this.stockPremiumLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.stockPremiumLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.stockPremiumLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.stockPremiumLayoutPanel.Size = new System.Drawing.Size(314, 535);
+            this.stockPremiumLayoutPanel.Size = new System.Drawing.Size(314, 536);
             this.stockPremiumLayoutPanel.TabIndex = 0;
             // 
             // stockPremiumBtnLayoutPanel
@@ -1412,7 +1411,7 @@
             this.stockPremiumBtnLayoutPanel.Controls.Add(this.stockPremiumOrderBtn, 1, 0);
             this.stockPremiumBtnLayoutPanel.Controls.Add(this.stockPremiumUpdateBtn, 0, 0);
             this.stockPremiumBtnLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.stockPremiumBtnLayoutPanel.Location = new System.Drawing.Point(6, 456);
+            this.stockPremiumBtnLayoutPanel.Location = new System.Drawing.Point(6, 457);
             this.stockPremiumBtnLayoutPanel.Name = "stockPremiumBtnLayoutPanel";
             this.stockPremiumBtnLayoutPanel.RowCount = 1;
             this.stockPremiumBtnLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -1449,7 +1448,7 @@
             // 
             this.stockPremiumInformationGroupBox.Controls.Add(this.stockPremiumInformationLayoutPanel);
             this.stockPremiumInformationGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.stockPremiumInformationGroupBox.Location = new System.Drawing.Point(6, 270);
+            this.stockPremiumInformationGroupBox.Location = new System.Drawing.Point(6, 271);
             this.stockPremiumInformationGroupBox.Name = "stockPremiumInformationGroupBox";
             this.stockPremiumInformationGroupBox.Padding = new System.Windows.Forms.Padding(15);
             this.stockPremiumInformationGroupBox.Size = new System.Drawing.Size(302, 177);
@@ -1466,7 +1465,7 @@
             this.stockPremiumInformationLayoutPanel.Controls.Add(this.stockPremiumEnduranceLabel, 0, 1);
             this.stockPremiumInformationLayoutPanel.Controls.Add(this.stockPremiumScheduleLabel, 0, 2);
             this.stockPremiumInformationLayoutPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.stockPremiumInformationLayoutPanel.Location = new System.Drawing.Point(15, 30);
+            this.stockPremiumInformationLayoutPanel.Location = new System.Drawing.Point(15, 29);
             this.stockPremiumInformationLayoutPanel.Name = "stockPremiumInformationLayoutPanel";
             this.stockPremiumInformationLayoutPanel.RowCount = 3;
             this.stockPremiumInformationLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -1528,13 +1527,13 @@
             this.stockPertamaxLayoutPanel.Controls.Add(this.stockPertamaxBtnLayoutPanel, 0, 2);
             this.stockPertamaxLayoutPanel.Controls.Add(this.stockPertamaxInformationGroupBox, 0, 1);
             this.stockPertamaxLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.stockPertamaxLayoutPanel.Location = new System.Drawing.Point(15, 30);
+            this.stockPertamaxLayoutPanel.Location = new System.Drawing.Point(15, 29);
             this.stockPertamaxLayoutPanel.Name = "stockPertamaxLayoutPanel";
             this.stockPertamaxLayoutPanel.RowCount = 3;
             this.stockPertamaxLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.stockPertamaxLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.stockPertamaxLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.stockPertamaxLayoutPanel.Size = new System.Drawing.Size(314, 535);
+            this.stockPertamaxLayoutPanel.Size = new System.Drawing.Size(314, 536);
             this.stockPertamaxLayoutPanel.TabIndex = 1;
             // 
             // stockPertamaxBtnLayoutPanel
@@ -1545,7 +1544,7 @@
             this.stockPertamaxBtnLayoutPanel.Controls.Add(this.stockPertamaxOrderBtn, 1, 0);
             this.stockPertamaxBtnLayoutPanel.Controls.Add(this.stockPertamaxUpdateBtn, 0, 0);
             this.stockPertamaxBtnLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.stockPertamaxBtnLayoutPanel.Location = new System.Drawing.Point(6, 456);
+            this.stockPertamaxBtnLayoutPanel.Location = new System.Drawing.Point(6, 457);
             this.stockPertamaxBtnLayoutPanel.Name = "stockPertamaxBtnLayoutPanel";
             this.stockPertamaxBtnLayoutPanel.RowCount = 1;
             this.stockPertamaxBtnLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -1582,7 +1581,7 @@
             // 
             this.stockPertamaxInformationGroupBox.Controls.Add(this.stockPertamaxInformationLayoutPanel);
             this.stockPertamaxInformationGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.stockPertamaxInformationGroupBox.Location = new System.Drawing.Point(6, 270);
+            this.stockPertamaxInformationGroupBox.Location = new System.Drawing.Point(6, 271);
             this.stockPertamaxInformationGroupBox.Name = "stockPertamaxInformationGroupBox";
             this.stockPertamaxInformationGroupBox.Padding = new System.Windows.Forms.Padding(15);
             this.stockPertamaxInformationGroupBox.Size = new System.Drawing.Size(302, 177);
@@ -1599,7 +1598,7 @@
             this.stockPertamaxInformationLayoutPanel.Controls.Add(this.stockPertamaxScheduleLabel, 0, 2);
             this.stockPertamaxInformationLayoutPanel.Controls.Add(this.stockPertamaxEnduranceLabel, 0, 1);
             this.stockPertamaxInformationLayoutPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.stockPertamaxInformationLayoutPanel.Location = new System.Drawing.Point(15, 30);
+            this.stockPertamaxInformationLayoutPanel.Location = new System.Drawing.Point(15, 29);
             this.stockPertamaxInformationLayoutPanel.Name = "stockPertamaxInformationLayoutPanel";
             this.stockPertamaxInformationLayoutPanel.RowCount = 3;
             this.stockPertamaxInformationLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -1661,13 +1660,13 @@
             this.stockSolarLayoutPanel.Controls.Add(this.stockSolarBtnLayoutPanel, 0, 2);
             this.stockSolarLayoutPanel.Controls.Add(this.stockSolarInformationGroupBox, 0, 1);
             this.stockSolarLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.stockSolarLayoutPanel.Location = new System.Drawing.Point(15, 30);
+            this.stockSolarLayoutPanel.Location = new System.Drawing.Point(15, 29);
             this.stockSolarLayoutPanel.Name = "stockSolarLayoutPanel";
             this.stockSolarLayoutPanel.RowCount = 3;
             this.stockSolarLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.stockSolarLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.stockSolarLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.stockSolarLayoutPanel.Size = new System.Drawing.Size(314, 535);
+            this.stockSolarLayoutPanel.Size = new System.Drawing.Size(314, 536);
             this.stockSolarLayoutPanel.TabIndex = 1;
             // 
             // stockSolarBtnLayoutPanel
@@ -1678,7 +1677,7 @@
             this.stockSolarBtnLayoutPanel.Controls.Add(this.stockSolarOrderBtn, 0, 0);
             this.stockSolarBtnLayoutPanel.Controls.Add(this.stockSolarUpdateBtn, 0, 0);
             this.stockSolarBtnLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.stockSolarBtnLayoutPanel.Location = new System.Drawing.Point(6, 456);
+            this.stockSolarBtnLayoutPanel.Location = new System.Drawing.Point(6, 457);
             this.stockSolarBtnLayoutPanel.Name = "stockSolarBtnLayoutPanel";
             this.stockSolarBtnLayoutPanel.RowCount = 1;
             this.stockSolarBtnLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -1716,7 +1715,7 @@
             // 
             this.stockSolarInformationGroupBox.Controls.Add(this.stockSolarInformationLayoutPanel);
             this.stockSolarInformationGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.stockSolarInformationGroupBox.Location = new System.Drawing.Point(6, 270);
+            this.stockSolarInformationGroupBox.Location = new System.Drawing.Point(6, 271);
             this.stockSolarInformationGroupBox.Name = "stockSolarInformationGroupBox";
             this.stockSolarInformationGroupBox.Padding = new System.Windows.Forms.Padding(15);
             this.stockSolarInformationGroupBox.Size = new System.Drawing.Size(302, 177);
@@ -1733,7 +1732,7 @@
             this.stockSolarInformationLayoutPanel.Controls.Add(this.stockSolarScheduleLabel, 0, 2);
             this.stockSolarInformationLayoutPanel.Controls.Add(this.stockSolarEnduranceLabel, 0, 1);
             this.stockSolarInformationLayoutPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.stockSolarInformationLayoutPanel.Location = new System.Drawing.Point(15, 30);
+            this.stockSolarInformationLayoutPanel.Location = new System.Drawing.Point(15, 29);
             this.stockSolarInformationLayoutPanel.Name = "stockSolarInformationLayoutPanel";
             this.stockSolarInformationLayoutPanel.RowCount = 3;
             this.stockSolarInformationLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -1793,7 +1792,7 @@
             this.dispencerSelectorLabel.AutoSize = true;
             this.dispencerSelectorLabel.Location = new System.Drawing.Point(17, 21);
             this.dispencerSelectorLabel.Name = "dispencerSelectorLabel";
-            this.dispencerSelectorLabel.Size = new System.Drawing.Size(107, 15);
+            this.dispencerSelectorLabel.Size = new System.Drawing.Size(114, 15);
             this.dispencerSelectorLabel.TabIndex = 1;
             this.dispencerSelectorLabel.Text = "See dispencer from";
             // 
@@ -1844,12 +1843,12 @@
             this.dispencerRecordLayoutPanel.Controls.Add(this.dispencerStatsLayoutPanel, 0, 0);
             this.dispencerRecordLayoutPanel.Controls.Add(this.dispencerRecordGroupBox, 0, 1);
             this.dispencerRecordLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dispencerRecordLayoutPanel.Location = new System.Drawing.Point(6, 21);
+            this.dispencerRecordLayoutPanel.Location = new System.Drawing.Point(6, 20);
             this.dispencerRecordLayoutPanel.Name = "dispencerRecordLayoutPanel";
             this.dispencerRecordLayoutPanel.RowCount = 2;
             this.dispencerRecordLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.dispencerRecordLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.dispencerRecordLayoutPanel.Size = new System.Drawing.Size(1032, 500);
+            this.dispencerRecordLayoutPanel.Size = new System.Drawing.Size(1032, 501);
             this.dispencerRecordLayoutPanel.TabIndex = 0;
             // 
             // dispencerStatsLayoutPanel
@@ -1896,7 +1895,7 @@
             this.dispencerRecordGroupBox.Location = new System.Drawing.Point(3, 203);
             this.dispencerRecordGroupBox.Name = "dispencerRecordGroupBox";
             this.dispencerRecordGroupBox.Padding = new System.Windows.Forms.Padding(15);
-            this.dispencerRecordGroupBox.Size = new System.Drawing.Size(1026, 294);
+            this.dispencerRecordGroupBox.Size = new System.Drawing.Size(1026, 295);
             this.dispencerRecordGroupBox.TabIndex = 1;
             this.dispencerRecordGroupBox.TabStop = false;
             this.dispencerRecordGroupBox.Text = "Dispencer Record";
@@ -1905,9 +1904,9 @@
             // 
             this.dispencerDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dispencerDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dispencerDataGridView.Location = new System.Drawing.Point(15, 30);
+            this.dispencerDataGridView.Location = new System.Drawing.Point(15, 29);
             this.dispencerDataGridView.Name = "dispencerDataGridView";
-            this.dispencerDataGridView.Size = new System.Drawing.Size(996, 249);
+            this.dispencerDataGridView.Size = new System.Drawing.Size(996, 251);
             this.dispencerDataGridView.TabIndex = 0;
             // 
             // tabSettings
@@ -1976,19 +1975,19 @@
             // passwordBox
             // 
             this.passwordBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.passwordBox.Font = new System.Drawing.Font("Lato", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordBox.ForeColor = System.Drawing.SystemColors.WindowText;
             this.passwordBox.Location = new System.Drawing.Point(85, 38);
             this.passwordBox.Name = "passwordBox";
             this.passwordBox.PasswordChar = '*';
-            this.passwordBox.Size = new System.Drawing.Size(136, 22);
+            this.passwordBox.Size = new System.Drawing.Size(136, 21);
             this.passwordBox.TabIndex = 6;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Lato", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(3, 35);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(76, 35);
@@ -2000,7 +1999,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Lato", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 35);
@@ -2011,17 +2010,17 @@
             // usernameBox
             // 
             this.usernameBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.usernameBox.Font = new System.Drawing.Font("Lato", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameBox.ForeColor = System.Drawing.SystemColors.WindowText;
             this.usernameBox.Location = new System.Drawing.Point(85, 3);
             this.usernameBox.Name = "usernameBox";
-            this.usernameBox.Size = new System.Drawing.Size(136, 22);
+            this.usernameBox.Size = new System.Drawing.Size(136, 21);
             this.usernameBox.TabIndex = 5;
             // 
             // loginBtn
             // 
             this.loginBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.loginBtn.Font = new System.Drawing.Font("Lato", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginBtn.ImageKey = "(none)";
             this.loginBtn.Location = new System.Drawing.Point(85, 73);
             this.loginBtn.Name = "loginBtn";
@@ -2080,7 +2079,7 @@
             this.mainLabel.AutoSize = true;
             this.mainLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.mainLabel.Font = new System.Drawing.Font("Lato Black", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mainLabel.ForeColor = System.Drawing.Color.Gray;
             this.mainLabel.Location = new System.Drawing.Point(341, 0);
             this.mainLabel.Name = "mainLabel";
@@ -2103,7 +2102,7 @@
             this.toolStripPanel.Controls.Add(this.connectionToolStrip, 0, 0);
             this.toolStripPanel.Controls.Add(this.sppToolStrip, 0, 0);
             this.toolStripPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toolStripPanel.Font = new System.Drawing.Font("Lato Hairline", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripPanel.Location = new System.Drawing.Point(3, 78);
             this.toolStripPanel.Name = "toolStripPanel";
             this.toolStripPanel.RowCount = 1;
@@ -2115,15 +2114,15 @@
             // shipmentToolStrip
             // 
             this.shipmentToolStrip.CanOverflow = false;
-            this.shipmentToolStrip.Font = new System.Drawing.Font("Lato", 8.999999F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shipmentToolStrip.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.shipmentToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.shipmentOpLabel,
             this.toolStripSeparator6,
             this.orderLateLabel});
-            this.shipmentToolStrip.Location = new System.Drawing.Point(334, 0);
+            this.shipmentToolStrip.Location = new System.Drawing.Point(364, 0);
             this.shipmentToolStrip.Name = "shipmentToolStrip";
             this.shipmentToolStrip.Padding = new System.Windows.Forms.Padding(0, 0, 25, 0);
-            this.shipmentToolStrip.Size = new System.Drawing.Size(155, 21);
+            this.shipmentToolStrip.Size = new System.Drawing.Size(165, 21);
             this.shipmentToolStrip.TabIndex = 14;
             this.shipmentToolStrip.Text = "Shipment ToolStrip";
             // 
@@ -2131,7 +2130,7 @@
             // 
             this.shipmentOpLabel.Image = global::OCR_Terminal.Properties.Resources.order;
             this.shipmentOpLabel.Name = "shipmentOpLabel";
-            this.shipmentOpLabel.Size = new System.Drawing.Size(78, 18);
+            this.shipmentOpLabel.Size = new System.Drawing.Size(86, 18);
             this.shipmentOpLabel.Text = "2 Shipment";
             // 
             // toolStripSeparator6
@@ -2142,13 +2141,13 @@
             // orderLateLabel
             // 
             this.orderLateLabel.Name = "orderLateLabel";
-            this.orderLateLabel.Size = new System.Drawing.Size(35, 18);
+            this.orderLateLabel.Size = new System.Drawing.Size(37, 18);
             this.orderLateLabel.Text = "1 late";
             // 
             // loToolStrip
             // 
             this.loToolStrip.CanOverflow = false;
-            this.loToolStrip.Font = new System.Drawing.Font("Lato", 8.999999F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loToolStrip.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.loLabel,
             this.toolStripSeparator3,
@@ -2157,10 +2156,10 @@
             this.loPertamaxLabel,
             this.toolStripSeparator5,
             this.loSolarLabel});
-            this.loToolStrip.Location = new System.Drawing.Point(489, 0);
+            this.loToolStrip.Location = new System.Drawing.Point(529, 0);
             this.loToolStrip.Name = "loToolStrip";
             this.loToolStrip.Padding = new System.Windows.Forms.Padding(0, 0, 25, 0);
-            this.loToolStrip.Size = new System.Drawing.Size(318, 21);
+            this.loToolStrip.Size = new System.Drawing.Size(338, 21);
             this.loToolStrip.TabIndex = 13;
             this.loToolStrip.Text = "LO ToolStrip";
             // 
@@ -2168,7 +2167,7 @@
             // 
             this.loLabel.Image = global::OCR_Terminal.Properties.Resources.lo;
             this.loLabel.Name = "loLabel";
-            this.loLabel.Size = new System.Drawing.Size(46, 18);
+            this.loLabel.Size = new System.Drawing.Size(49, 18);
             this.loLabel.Text = "3 LO";
             // 
             // toolStripSeparator3
@@ -2179,7 +2178,7 @@
             // loPremiumLabel
             // 
             this.loPremiumLabel.Name = "loPremiumLabel";
-            this.loPremiumLabel.Size = new System.Drawing.Size(77, 18);
+            this.loPremiumLabel.Size = new System.Drawing.Size(85, 18);
             this.loPremiumLabel.Text = "56.7 Premium";
             // 
             // toolStripSeparator4
@@ -2190,7 +2189,7 @@
             // loPertamaxLabel
             // 
             this.loPertamaxLabel.Name = "loPertamaxLabel";
-            this.loPertamaxLabel.Size = new System.Drawing.Size(81, 18);
+            this.loPertamaxLabel.Size = new System.Drawing.Size(87, 18);
             this.loPertamaxLabel.Text = "44.8 Pertamax";
             // 
             // toolStripSeparator5
@@ -2201,19 +2200,19 @@
             // loSolarLabel
             // 
             this.loSolarLabel.Name = "loSolarLabel";
-            this.loSolarLabel.Size = new System.Drawing.Size(58, 18);
+            this.loSolarLabel.Size = new System.Drawing.Size(63, 18);
             this.loSolarLabel.Text = "67.3 Solar";
             // 
             // connectionToolStrip
             // 
             this.connectionToolStrip.CanOverflow = false;
-            this.connectionToolStrip.Font = new System.Drawing.Font("Lato", 8.999999F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.connectionToolStrip.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.connectionToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.connectionLabel});
             this.connectionToolStrip.Location = new System.Drawing.Point(0, 0);
             this.connectionToolStrip.Name = "connectionToolStrip";
             this.connectionToolStrip.Padding = new System.Windows.Forms.Padding(0, 0, 25, 0);
-            this.connectionToolStrip.Size = new System.Drawing.Size(95, 21);
+            this.connectionToolStrip.Size = new System.Drawing.Size(102, 21);
             this.connectionToolStrip.TabIndex = 12;
             this.connectionToolStrip.Text = "connection ToolStrip";
             // 
@@ -2221,23 +2220,23 @@
             // 
             this.connectionLabel.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.connectionLabel.Name = "connectionLabel";
-            this.connectionLabel.Size = new System.Drawing.Size(59, 18);
+            this.connectionLabel.Size = new System.Drawing.Size(66, 18);
             this.connectionLabel.Text = "Connected";
             // 
             // sppToolStrip
             // 
             this.sppToolStrip.CanOverflow = false;
-            this.sppToolStrip.Font = new System.Drawing.Font("Lato", 8.999999F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sppToolStrip.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sppToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sppLabel,
             this.toolStripSeparator1,
             this.sppOpLabel,
             this.toolStripSeparator2,
             this.sppCompleteLabel});
-            this.sppToolStrip.Location = new System.Drawing.Point(95, 0);
+            this.sppToolStrip.Location = new System.Drawing.Point(102, 0);
             this.sppToolStrip.Name = "sppToolStrip";
             this.sppToolStrip.Padding = new System.Windows.Forms.Padding(0, 0, 25, 0);
-            this.sppToolStrip.Size = new System.Drawing.Size(239, 21);
+            this.sppToolStrip.Size = new System.Drawing.Size(262, 21);
             this.sppToolStrip.TabIndex = 9;
             this.sppToolStrip.Text = "SPP ToolStrip";
             // 
@@ -2245,7 +2244,7 @@
             // 
             this.sppLabel.Image = global::OCR_Terminal.Properties.Resources.spp;
             this.sppLabel.Name = "sppLabel";
-            this.sppLabel.Size = new System.Drawing.Size(52, 18);
+            this.sppLabel.Size = new System.Drawing.Size(57, 18);
             this.sppLabel.Text = "4 SPP";
             // 
             // toolStripSeparator1
@@ -2256,7 +2255,7 @@
             // sppOpLabel
             // 
             this.sppOpLabel.Name = "sppOpLabel";
-            this.sppOpLabel.Size = new System.Drawing.Size(72, 18);
+            this.sppOpLabel.Size = new System.Drawing.Size(82, 18);
             this.sppOpLabel.Text = "3 on progress";
             // 
             // toolStripSeparator2
@@ -2267,7 +2266,7 @@
             // sppCompleteLabel
             // 
             this.sppCompleteLabel.Name = "sppCompleteLabel";
-            this.sppCompleteLabel.Size = new System.Drawing.Size(67, 18);
+            this.sppCompleteLabel.Size = new System.Drawing.Size(75, 18);
             this.sppCompleteLabel.Text = "1 completed";
             // 
             // openSppFileDialog

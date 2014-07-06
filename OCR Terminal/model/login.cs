@@ -12,6 +12,10 @@ namespace OCR_Terminal
         public int Id { get; set; }
         public string username { get; set; }
         public string password { get; set; }
+        public string nama_id { get; set; }
+        public string alamat { get; set; }
+        public string pemilik { get; set; }
+        public string role { get; set; }
 
         public const int HASH_BYTE_SIZE = 24;
         public const int PBKDF2_ITERATIONS = 1000;
